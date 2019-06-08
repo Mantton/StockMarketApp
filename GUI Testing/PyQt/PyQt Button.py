@@ -2,6 +2,7 @@ from PyQt5.QtWidgets import *
 import sys
 from PyQt5 import QtGui
 from PyQt5.QtCore import QRect
+from PyQt5 import QtCore
 
 
 class Window(QMainWindow):
@@ -23,8 +24,12 @@ class Window(QMainWindow):
 
     def UiComponents(self):
         button = QPushButton("Click Me ", self)
-        button.move(50,50)
-        button.setGeometry(QRect(100,100,111,25))
+        button.move(50, 50)
+        button.setGeometry(QRect(100, 100, 111, 40))
+        button.setIcon(QtGui.QIcon('icon.jpg'))
+        button.setIconSize(QtCore.QSize(40, 40))
+        button.setToolTip("Click if you love rosie")
+        # button.setToolTipDuration(2000)
 
 
 if __name__ == "__main__":
