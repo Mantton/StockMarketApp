@@ -9,7 +9,7 @@ class Window(QMainWindow):
     def __init__(self):
         super().__init__()
 
-        title = " PYQT 5 "
+        title = "PYQT Events and Signals "
         left = 500
         top = 200
         width = 300
@@ -19,17 +19,25 @@ class Window(QMainWindow):
         self.setWindowTitle(title)
         self.setWindowIcon(QtGui.QIcon(iconname))
         self.setGeometry(left, top, width, height)
-        self.UiComponents()
-        self.show()
+        self.CreateButton()
 
-    def UiComponents(self):
-        button = QPushButton("Click Me ", self)
+
+        self.show()
+    def CreateButton(self):
+        button = QPushButton("Close App", self)
         button.move(50, 50)
-        button.setGeometry(QRect(100, 100, 111, 40))
-        button.setIcon(QtGui.QIcon('icon.jpg'))
-        button.setIconSize(QtCore.QSize(40, 40))
-        button.setToolTip("Click if you love rosie")
+        button.setGeometry(QRect(100, 100, 120, 40))
+        button.setIcon(QtGui.QIcon('button1.jpg'))
+        button.setIconSize(QtCore.QSize(60, 60))
+        button.setToolTip("Click to close the app")
         # button.setToolTipDuration(2000)
+        button.clicked.connect(self.buttonclick) # this function is not defined but works
+
+    def buttonclick(self):
+        sys.exit()
+
+
+
 
 
 if __name__ == "__main__":
