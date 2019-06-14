@@ -1,5 +1,5 @@
 # StockMarketApp
 
-Trying to build a stock market app
-Learning a lot about python along the way
-Really happy I left Java LOL
+Trying to build a stock market app\n
+Learning a lot about python along the way\n
+Really happy I left Java LOLn
