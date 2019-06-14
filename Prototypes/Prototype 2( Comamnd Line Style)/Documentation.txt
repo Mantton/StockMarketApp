@@ -1,0 +1,93 @@
+
+
+COMPANY NAME : Mantton Softwares
+
+PROJECT CODE : REOX001
+
+PROJECT NAME : STOCK MARKET APP
+
+CREATED BY : SHEDRACH UZOUKWU
+
+
+
+
+OVERVIEW;
+
+This is my first project sO I wanted to apply my basic knowledge of python into  real world stuff.
+I decided that I would develop a stock market app as I have been really interested in investing in the stock markets.
+This project should help me understand how to import and use external Libraries and apply them into a functional code
+
+
+
+RESOURCES :
+
+Yahoo finance API
+GUI Library PyQt or Tkinter
+
+DAY 1 OUTLINES :
+
+GET YAHOO API WORKING WITHING SCRIPT, TEST AND SEE HOW IT CAN BE APPLIED IN A LARGER SCALE
+
+CHOOSE THE GUI LIBRARY AS IT WOULD BE STUCK TO.
+
+
+
+DAY 1 UPDATES :
+
+Yahoo finance seems to not be working.
+
+changed stock library to yahoo_fin, works fine with a a lot of delay.
+
+Takes approximately 4 secs to retrieve the data
+
+Looking for different library, undable to retrieve etra info such as last close etc
+
+Gonna leave the stocks stuff with yahoo_fin for now but will prolly switch
+
+moving on to finding the bst GUI library
+
+currently working with TKinter
+
+understood the basics of TKinter so gonna apply it with the yahoo-fin stuff to simply return
+the current price of a stock
+
+# program complete and working;
+
+yahoo_fin only reads NASDAQ  stocks
+have to put a try and except block to catch that vallue error
+
+unfortunately the value error is not the only errror exiting the get_stock_price function so
+i have to leave an open except method
+
+Returning to get a better Stock Market API, will need extar info to make the app run better
+
+These are all prototypes. After the final prototype i will be implementing the user exterience application as part
+of the main program
+
+
+Trying to redo the program using PyQt as I was able to find a design editor faster than on tkinter, plu sits being used
+alot ore often now so might be worth learning it so i dont know .
+
+
+day 2
+
+working on cammand line version of app
+
+
+DAY 2 OVERVIEW
+
+really good day : completed alot of the functions, got stuck at the Datasheet saing part
+
+DAY 3:
+-HOLY FUCKING SHIT THAT TOOK FOREVER
+
+-FINALLY GOT THE DATASHEET TO FUCKING WORK
+
+-ran into a huge bug that causes the orders not to save until the program has been exited.
+
+-done  for the day,
+-will upload it to github now
+
+
+
+
