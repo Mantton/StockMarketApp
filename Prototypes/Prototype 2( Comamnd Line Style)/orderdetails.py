@@ -18,4 +18,11 @@ class Order:
         wb.save('Orders.xlsx')
         wb.close()
 
-
+        '''
+        Dev Comments 
+            This seemed like the easiset way to create an order 
+            after creating an order object the attributes of the order obk=ject are saved as a list which is then 
+            written into columns in the order.xlsx file. 
+            
+        
+        '''

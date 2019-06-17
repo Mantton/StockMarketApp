@@ -1,0 +1,2 @@
+user_balance = 100000
+order_count = 0
