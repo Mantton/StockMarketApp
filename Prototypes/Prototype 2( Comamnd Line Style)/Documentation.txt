@@ -79,14 +79,79 @@ DAY 2 OVERVIEW
 really good day : completed alot of the functions, got stuck at the Datasheet saing part
 
 DAY 3:
--HOLY FUCKING SHIT THAT TOOK FOREVER
+HOLY FUCKING SHIT THAT TOOK FOREVER
 
--FINALLY GOT THE DATASHEET TO FUCKING WORK
+FINALLY GOT THE DATASHEET TO FUCKING WORK
 
--ran into a huge bug that causes the orders not to save until the program has been exited.
+ran into a huge bug that causes the orders not to save until the program has been exited.
 
--done  for the day,
--will upload it to github now
+done  for the day,
+will upload it to git hub now
+
+
+TASKS FOR DAY 4 :
+
+-CREATE SELL FUNCTION
+-ADD COLOR CODING TO EXCEL WORKSHEET - DROPPED
+-CREATE 'show.total_invested'
+-CREATE OUTLINE FOR GUI APP
+
+
+DAY 4!
+
+OKI lets start the debug process
+
+-OKI DEBUG COMPLETE, PROGRAM WORKINIG FINE, THAT BUG IS STILL THERE
+
+tasks to start off:
+
+show.total_invested function - DONE
+
+SELL FUNCTION :
+
+HOW IT SHOULD WORK :
+
+since i do not need to get the price i bought it at i can wrk the function solely on the datasheet.xlsx
+
+itll just get the current price of a stock and* by the amount requested to be sold remove that amount from the stock amount cell
+
+lets go
+
+
+sell function complete, just one major bug:
+Unable to get worksheet to save to file thus doing evrything but updating the datasheet
+
+HOLY FUCKING SHIT, HOW DOES EVERYTHING WORK ASIDE FROM THIS LAST PEICE OF CODE
+
+THIS PROJDCT WOULD  99.9% FUCKING COMPLETE IF THIS BLOODY DATASHEET WOULD JUST FUCKING SAVE
+
+
+LOL found the issue with the code:
+
+- Sved file as data.xlxs instead of xlsx
+- When updating the portfolio it takes into account the total stock from the orders worksheet makiing the func irelvant
+as it is overwritten on each update.
+so I beleive the fix is to link the shares sold to the ordeers fie then get the total
+
+
+
+FINALLY
+
+got it working
+
+the prject is complete
+
+
+BUGS AS WE END :
+
+-Have to exit the program to sve the changes to orders.xlsx
+-Code cannot differentiate between taking out money from investment and losing money in a stock drop
+-May cause excel to behave funky or slow
+- Cannot differntiate between a wrong symbol and no network connection
+
+
+
+
 
 
 
